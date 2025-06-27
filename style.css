@@ -130,6 +130,10 @@ h1 {
     font-weight: bold;
     text-align: center;
     box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+}
+
+.popup.show {
+    display: block;
     animation: slideUpFadeOut 2s forwards;
 }
 
