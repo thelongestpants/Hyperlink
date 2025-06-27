@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0f1;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #ffffff;
+    font-size: 5em;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.7), 0 0 25px rgba(255, 0, 0, 0.5);
+    -webkit-text-stroke: 1.5px #ff0000;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #333333;
+    border: 2px solid #ff0000;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #ff0000;
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.6);
+    transform: translateY(-3px);
+}
+
+.button img {
+    width: 24px;
+    margin-right: 12px;
+}
+
+.links-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 15px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.link-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333333;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.copy-btn {
+    background: #ff0000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.copy-btn:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+
+.popup {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2ecc71;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+    animation: slideUpFadeOut 2s forwards;
+}
+
+@keyframes slideUpFadeOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+    90% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+}
