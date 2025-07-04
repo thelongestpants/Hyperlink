@@ -16,7 +16,6 @@
             <span>Discord</span>
         </a>    </div>
     <div class="links-container" id="linksContainer"></div>
-    <div class="popup" id="popup">Copied to clipboard!</div>
     <script>
         function verifyShortUrl() {
             let userUrl = prompt("Enter the shortened URL:");
@@ -45,13 +44,7 @@
         }
 
         function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                const popup = document.getElementById("popup");
-                popup.style.display = "block";
-                setTimeout(() => {
-                    popup.style.display = "none";
-                }, 2000);
-            });
+            navigator.clipboard.writeText(text);
         }
     </script>
 </body>
